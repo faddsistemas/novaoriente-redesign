@@ -68,7 +68,7 @@ export function PropertySearch({ compact = false, className }: Props) {
   }
 
   const fields = (
-    <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
+    <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-6">
       <label className="sr-only" htmlFor="search-tipo">
         Tipo
       </label>
@@ -127,22 +127,22 @@ export function PropertySearch({ compact = false, className }: Props) {
           </option>
         ))}
       </select>
-      <div className="grid grid-cols-2 gap-2">
-        <Input
-          aria-label="Preço mínimo"
-          placeholder="Preço mín."
-          inputMode="numeric"
-          value={precoMin}
-          onChange={(e) => setPrecoMin(e.target.value.replace(/\D/g, ""))}
-        />
-        <Input
-          aria-label="Preço máximo"
-          placeholder="Preço máx."
-          inputMode="numeric"
-          value={precoMax}
-          onChange={(e) => setPrecoMax(e.target.value.replace(/\D/g, ""))}
-        />
-      </div>
+      <Input
+        aria-label="Preço mínimo"
+        placeholder="Preço min"
+        inputMode="numeric"
+        value={precoMin}
+        onChange={(e) => setPrecoMin(e.target.value.replace(/\D/g, ""))}
+        className="min-w-0"
+      />
+      <Input
+        aria-label="Preço máximo"
+        placeholder="Preço max"
+        inputMode="numeric"
+        value={precoMax}
+        onChange={(e) => setPrecoMax(e.target.value.replace(/\D/g, ""))}
+        className="min-w-0"
+      />
     </div>
   );
 

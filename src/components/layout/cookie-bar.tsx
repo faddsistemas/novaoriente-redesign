@@ -19,13 +19,13 @@ export function CookieBar() {
 
   return (
     <div
-      className="fixed inset-x-0 bottom-0 z-30 border-t border-brand-primary/20 bg-white/95 px-4 py-2 shadow-lg backdrop-blur-sm md:bottom-[max(0px,env(safe-area-inset-bottom))]"
-      style={{ paddingBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}
+      className="fixed inset-x-0 bottom-14 z-30 border-t border-brand-primary/20 bg-white/95 px-3 py-3 shadow-lg backdrop-blur-sm md:bottom-[max(0px,env(safe-area-inset-bottom))] md:px-4 md:py-2"
+      style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
       role="dialog"
       aria-label="Aviso de cookies"
     >
-      <div className="mx-auto flex max-w-7xl flex-col items-start gap-2 text-sm text-neutral-800 md:flex-row md:items-center md:justify-between">
-        <p>
+      <div className="mx-auto flex max-w-7xl flex-col gap-3 text-xs leading-relaxed text-neutral-800 sm:text-sm md:flex-row md:items-center md:justify-between md:gap-2">
+        <p className="min-w-0 flex-1">
           Utilizamos cookies para melhorar sua experiência. Saiba mais na{" "}
           <Link href="/lgpd/" className="font-semibold text-brand-primary underline">
             política de privacidade
