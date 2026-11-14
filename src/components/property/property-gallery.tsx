@@ -22,9 +22,9 @@ export function PropertyGallery({
   if (!current) return null;
 
   return (
-    <div data-testid="property-gallery">
+    <div data-testid="property-gallery" className="min-w-0">
       <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-neutral-100">
-        <Image src={current.src} alt={title} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 70vw" />
+        <Image src={current.src} alt={title} fill priority className="absolute inset-0 object-cover" sizes="(max-width: 1024px) 100vw, 70vw" />
         {list.length > 1 ? (
           <>
             <button
@@ -55,7 +55,7 @@ export function PropertyGallery({
         </button>
       </div>
       {list.length > 1 ? (
-        <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+        <div className="mt-3 flex max-w-full gap-2 overflow-x-auto pb-1">
           {list.map((img, i) => (
             <button
               key={img.thumb + i}

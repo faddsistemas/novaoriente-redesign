@@ -44,9 +44,9 @@ export default async function PropertyPage({ params }: { params: Promise<Params>
     <>
       <SiteHeader />
       <SiteShell>
-        <main className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
-          <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
-            <article>
+        <main className="mx-auto min-w-0 max-w-7xl overflow-x-hidden px-4 py-8 lg:px-6">
+          <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+            <article className="min-w-0">
               <PropertyGallery images={images} title={property.title} />
               <h1 className="mt-6 text-2xl font-bold text-brand-primary md:text-3xl">{property.title}</h1>
               <p className="mt-2 text-sm text-neutral-600">
