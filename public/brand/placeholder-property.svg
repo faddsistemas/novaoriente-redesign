@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Sem foto do imóvel">
+  <rect width="800" height="600" fill="#f6f6f6"/>
+  <rect x="80" y="120" width="120" height="90" rx="8" fill="#ff6601"/>
+  <text x="220" y="175" font-family="system-ui,sans-serif" font-size="42" font-weight="700" fill="#04518c">nova oriente</text>
+  <text x="220" y="210" font-family="system-ui,sans-serif" font-size="18" fill="#003760">Foto em atualização</text>
+</svg>

@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+playwright-report
+test-results
+.pages-root
+_docs

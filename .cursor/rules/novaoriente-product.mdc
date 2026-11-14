@@ -1,0 +1,14 @@
+---
+description: Regras de produto e conteúdo do redesign Nova Oriente
+alwaysApply: true
+---
+
+# Nova Oriente redesign
+
+- Manter identidade: logo nas cores originais (azul #04518C, laranja #ff6601), nunca branco; badge claro sobre fundo escuro.
+- Somente páginas e fluxos do site atual (ver PRODUCT.md). Não inventar aluguel, login, blog, simulador, agendamento, mapa na listagem, equipe ou depoimentos.
+- Referência de UX: conceitos QuintoAndar apenas — sem copiar layout, textos, ícones ou marca.
+- Formulários estáticos → WhatsApp (37) 99999-1100 com mensagem preenchida.
+- Contadores só com dados reais de properties.json.
+- Cookie bar fina; WCAG AA; WhatsApp com área de toque ≥ 44px sem sobrepor cookie.
+- Fotos locais WebP em public/imoveis/; placeholder neutro com marca quando sem foto.
